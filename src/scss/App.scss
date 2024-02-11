@@ -1,0 +1,42 @@
+@import "core/reset";
+
+.app {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+.filter {
+  margin-bottom: 10px;
+  padding: 15px;
+  border-bottom: dotted rgb(113, 113, 113) 1px;
+  &__input {
+    border-radius: 5px;
+    border: solid rgb(113, 113, 113) 1.5px;
+    height: 30px;
+  }
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__card {
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+    overflow: hidden;
+  }
+  &__img {
+    border-radius: 5px;
+    width: 20vw;
+    object-fit: cover;
+    @media (max-width: 425px) {
+      width: 50vw;
+    }
+  }
+}
